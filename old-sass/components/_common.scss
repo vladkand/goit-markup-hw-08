@@ -1,0 +1,36 @@
+// ! =====  Параметры SECTION
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-thin {
+  padding-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// ! ===== ПАРАМЕТРЫ КОНТЕЙНЕРА
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// ! =====  ШРИФТ h2 ДЛЯ ВСЕХ СЕКЦИЙ(кроме footer)
+.section__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+// ! ===== ЦВЕТ ДЛЯ ЗАГОЛОВКОВ СЕКЦИЙ
+.title {
+  color: var(--text-second-color);
+}

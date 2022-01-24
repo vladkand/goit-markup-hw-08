@@ -1,0 +1,171 @@
+/* !========== HEADER======= */
+/* === нижняя линия в HEADER ===  */
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+  // margin-right: 15px;
+}
+
+// ! ====== LOGO  COMMONS
+
+// ! logo-mobile
+.logo {
+  display: inline-block;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.03em;
+
+  color: var(--text-accent-color);
+  //
+  & .logo__part--dark {
+    color: var(--black-color);
+  }
+  //  БЕЛЫЙ ЦВЕТ ЛОГОТИПА ФУТЕРА
+  & .logo__part--light {
+    color: var(--bg-prime-color);
+  }
+}
+
+/* ----  СТИЛЬ ЛОГОТИПА mobile--- */
+.header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  outline-color: transparent;
+
+  transition: outline-color $function;
+
+  &:focus {
+    outline-color: var(--text-accent-color);
+  }
+}
+// ! ======================================
+
+/* БЛОК НАВИГАЦИЯ И КОНТАКТЫ */
+// .header__container {
+//   display: flex;
+//   align-items: center;
+// }
+
+// -------------    TABLET
+// .header__logo {
+//   padding-top: 24px;
+//   padding-bottom: 25px;
+//   outline-color: transparent;
+
+//   transition: outline-color $function;
+
+//   &:focus {
+//     outline-color: var(--text-accent-color);
+//   }
+// }
+
+// .header__container {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .logo {
+//   display: block;
+
+//   font-family: Raleway;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 31px;
+//   letter-spacing: 0.03em;
+
+// -----------------
+
+// !---------- nav & contact
+.nav-box {
+  @extend %hidden;
+
+  padding-left: 93px;
+  align-items: center;
+}
+// .site-nav {
+//   // display: flex;
+// }
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav__link {
+  display: block;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-second-color);
+
+  transition: color $function, outline-color $function;
+
+  // /*  ПОДСВЕТКА И ШТРИХ ТЕКУЩЕЙ СТРАНИЦЫ   */
+  &--current {
+    color: var(--text-accent-color);
+  }
+
+  &--current:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+    background-color: var(--text-accent-color);
+  }
+  &:hover,
+  &:focus {
+    color: var(--text-accent-color);
+    outline-color: var(--text-accent-color);
+  }
+}
+
+// ! ---------------- CONTACT
+.contacts-head {
+  @extend %hidden;
+
+  display: flex;
+  margin-left: auto;
+  margin-left: 305px;
+}
+
+.contacts-head__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts-head__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--text-prime-color);
+  fill: currentColor;
+
+  transition: border-color $function, outline-color $function, fill $function, color $function;
+
+  &:hover,
+  &:focus {
+    color: var(--text-accent-color);
+    fill: currentColor;
+    outline-color: var(--text-accent-color);
+  }
+}
+
+.contacts-head__icon {
+  margin-right: 10px;
+}

@@ -1,0 +1,26 @@
+//  ! БЛОК ПРИСОЕДИНЯЙТЕСЬ  */
+.join {
+  display: flex;
+  flex-direction: column;
+  margin-right: 93px;
+}
+
+.join__title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  color: var(--bg-prime-color);
+
+  text-transform: uppercase;
+}
+
+.webpages__link--dark {
+  background-color: var(--soc-footer-color);
+}
+
+.webpages__icon--dark {
+  fill: var(--bg-prime-color);
+}

@@ -1,0 +1,24 @@
+/* !========== HEADER======= */
+/* === нижняя линия в HEADER ===  */
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+/* БЛОК НАВИГАЦИЯ И КОНТАКТЫ */
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+/* ----  СТИЛЬ ЛОГОТИПА --- */
+.header__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  outline-color: transparent;
+
+  transition: outline-color $function;
+
+  &:focus {
+    outline-color: var(--text-accent-color);
+  }
+}

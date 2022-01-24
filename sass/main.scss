@@ -1,0 +1,22 @@
+@import './utils.scss/variables';
+@import './utils.scss/my-normalize';
+@import './utils.scss/placeholder';
+@import './components/m-common';
+@import './components/m-logo';
+// @import './components/m-modal';
+@import './components/m-webpages';
+
+@import './layout/ma-header-all';
+// @import './layout/mb-header-nav';
+// @import './layout/mc-header-contact';
+@import './layout/md-main-hero';
+@import './layout/me-main-nuances';
+@import './layout/t-main-production';
+@import './layout/mf-main-team';
+@import './layout/mg-main-clients';
+@import './layout/mh-footer';
+// @import './layout/mi-footer-address';
+// @import './layout/mj-footer-join';
+// @import './layout/mk-footer-mailing';
+@import './layout/ml-portfolio-filters';
+@import './layout/mm-portfolio-examples';

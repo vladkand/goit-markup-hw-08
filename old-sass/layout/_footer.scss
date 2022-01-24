@@ -1,0 +1,22 @@
+/* ! ===  FOOTER  === */
+.footer {
+  background-color: var(--hero-footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__contacts {
+  margin-right: 70px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__logo {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+/* ============ FOOTER FIN ============== */

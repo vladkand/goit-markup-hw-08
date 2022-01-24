@@ -1,0 +1,53 @@
+/* !--- СЕКЦИЯ КОМАНДА --- */
+.team {
+  background-color: var(--bg-second-color);
+}
+
+.team-list {
+  display: block;
+  justify-content: space-between;
+}
+
+.team-list__item {
+  max-width: 480px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--bg-prime-color);
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+.member__data {
+  padding: 30px 32px;
+
+  text-align: center;
+}
+
+.member__descript {
+  margin-bottom: 16px;
+}
+
+.member__title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+// .member__txt {
+//   display: inline-block;
+//   font-size: 16px;
+//   line-height: 1.19px;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+// }

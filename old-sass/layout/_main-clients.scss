@@ -1,0 +1,37 @@
+// ! --- СЕКЦИЯ КЛИЕНТЫ ---
+.client-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-list__item {
+  display: flex;
+}
+
+.client-list__link {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+
+  border: 1px solid var(--icon-soc-color);
+  border-radius: 4px;
+  transition: outline-color $function;
+
+  &:hover,
+  &:focus {
+    outline-color: var(--text-accent-color);
+  }
+}
+
+.client-list__icon {
+  fill: var(--icon-soc-color);
+  transition: fill $function;
+
+  .client-list__link:hover &,
+  .client-list__link:focus & {
+    fill: var(--text-accent-color);
+  }
+}
