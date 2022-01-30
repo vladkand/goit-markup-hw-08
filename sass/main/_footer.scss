@@ -25,6 +25,10 @@
 
 .footer__contacts {
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-right: 165px;
+  }
 }
 /* --- АДРЕСС ПРОСПЕКТТ --- */
 .address-list__txt {
@@ -64,9 +68,12 @@
 //  ! БЛОК ПРИСОЕДИНЯЙТЕСЬ  */
 .join {
   display: block;
-  // flex-direction: column;
-  // margin-right: 93px;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    vertical-align: top;
+  }
 }
 
 .join__title {
@@ -94,6 +101,12 @@
 // !-----part
 .mailing {
   display: block;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    width: 450px;
+  }
+
   // flex-direction: column;
 }
 
@@ -138,6 +151,7 @@
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: 0.03em;
+
     color: var(--link-footer-color);
   }
   &:focus {
