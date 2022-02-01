@@ -11,7 +11,10 @@
 .footer__container {
   display: block;
   text-align: center;
-  // align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer__logo {
@@ -24,10 +27,27 @@
 // ---part
 
 .footer__contacts {
-  margin-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 768px) {
     display: inline-block;
     margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // margin-bottom: 0;
+    margin-right: 86px;
+  }
+}
+
+.address-list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 /* --- АДРЕСС ПРОСПЕКТТ --- */
@@ -42,13 +62,13 @@
 }
 
 /* --- АДРЕСНЫЕ ССЫЛКИ В ФУТЕРЕ  --- */
-// .address-list__item {
-//   margin-bottom: 8px;
-// }
+.address-list__item:not(:last-child) {
+  margin-bottom: 8px;
+}
 
 .address-list__link {
   display: block;
-  margin-top: 8px;
+  // margin-top: 8px;
 
   font-style: normal;
   font-weight: 400;
@@ -66,13 +86,22 @@
 }
 
 //  ! БЛОК ПРИСОЕДИНЯЙТЕСЬ  */
+
 .join {
-  display: block;
-  margin-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    display: block;
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: 768px) {
     display: inline-block;
     vertical-align: top;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 93px;
+    align-items: flex-start;
   }
 }
 
@@ -106,6 +135,13 @@
     display: inline-block;
     width: 450px;
   }
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    // width: 450px;
+  }
 
   // flex-direction: column;
 }
@@ -123,9 +159,20 @@
 }
 
 .mailing__box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+
+  // ! -- VAR-02
+  display: block;
+  // margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .mailing__input {
@@ -135,6 +182,10 @@
   padding-left: 16px;
   /* padding-right: 5px; */
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
 
   font-size: 16px;
   line-height: 1.25;
@@ -163,6 +214,10 @@
 
 .mailing__btn {
   display: flex;
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   width: 200px;
   height: 50px;
   align-items: center;
