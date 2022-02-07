@@ -1,0 +1,5 @@
+.contacts-head {
+  @include max-tel {
+    display: none;
+  }
+}

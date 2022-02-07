@@ -136,14 +136,10 @@
     width: 450px;
   }
   @media screen and (min-width: 1200px) {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    // width: 450px;
   }
-
-  // flex-direction: column;
 }
 
 .mailing__label {
@@ -159,14 +155,10 @@
 }
 
 .mailing__box {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-
   // ! -- VAR-02
   display: block;
   // margin-left: auto;
-  margin-right: auto;
+  // margin-right: auto;
   text-align: center;
 
   @media screen and (min-width: 1200px) {
@@ -214,32 +206,33 @@
 
 .mailing__btn {
   display: flex;
+  justify-content: center;
   @media screen and (max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;
   }
-  width: 200px;
-  height: 50px;
-  align-items: center;
-  padding-left: 28px;
+  // width: 200px;
+  // height: 50px;
+  // align-items: center;
+  // padding-left: 28px;
 
-  font-family: inherit; /* НАСЛ-от BODY-  */
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.88;
-  color: var(--bg-prime-color);
-  background-color: var(--text-accent-color);
-  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color $function;
+  // font-family: inherit; /* НАСЛ-от BODY-  */
+  // font-size: 16px;
+  // font-weight: 700;
+  // line-height: 1.88;
+  // color: var(--bg-prime-color);
+  // background-color: var(--text-accent-color);
+  // // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  // border: none;
+  // border-radius: 4px;
+  // cursor: pointer;
+  // transition: background-color $function;
 
-  &:hover,
-  &:focus {
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: #188ce8;
+  //   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  // }
 }
 
 .mailing__icon {

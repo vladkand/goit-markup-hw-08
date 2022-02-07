@@ -1,0 +1,5 @@
+.site-nav-list {
+  @include max-tel {
+    display: none;
+  }
+}

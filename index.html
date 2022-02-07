@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mob_ГЛАВНАЯ</title>
+  <link rel="icon" href="./pointer.svg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -16,53 +18,114 @@
 </head>
 
 <body>
-  <!-- ! ======================= ШАПКА САЙТА HEADER =====================================  -->
+  <!-- ! ШАПКА САЙТА HEADER  -->
 
 
   <header class="header">
+
     <div class="container header__container">
 
-      <!-- ЛОГОТИП СТУДИИ -->
-      <a class="logo header__logo link" href="./index.html">
-        Web<span class="logo__part--dark">Studio</span></a>
-
-      <!-- !==================== ГЛАВНАЯ НАВИГАЦИЯ C ПЕРВЫМ СПИСКОМ ===================== -->
+      <!-- == ГЛАВНАЯ НАВИГАЦИЯ C ПЕРВЫМ СПИСКОМ = -->
       <nav class="nav-box">
-        <ul class="site-nav list">
-          <li class="site-nav__item"><a class="site-nav__link site-nav__link--current link"
+        <!-- ЛОГОТИП СТУДИИ -->
+        <a class="logo header__logo link" href="./index.html">
+          Web<span class="logo__part--dark">Studio</span></a>
+
+        <ul class="site-nav-list list">
+          <li class="site-nav-list__item"><a class="site-nav-list__link site-nav-list__link--current link"
               href="./index.html">Cтудия</a>
           </li>
-          <li class="site-nav__item"><a class="site-nav__link link" href="./portfolio.html">Портфолио</a>
+          <li class="site-nav-list__item"><a class="site-nav-list__link link" href="./portfolio.html">Портфолио</a>
           </li>
-          <li class="site-nav__item"><a href="#" class="site-nav__link link">Контакты</a>
+          <li class="site-nav-list__item"><a href="#" class="site-nav-list__link link">Контакты</a>
           </li>
         </ul>
+
+        <!-- ========== CONTACT  ========= -->
+        <ul class=" contacts-head list">
+          <li class="contacts-head__item">
+            <a class="contacts-head__link link" href="mailto:info@devstudio.com" rel=""><svg class="contacts-head__icon"
+                width="16" height="12">
+                <use href="./images/icons.svg#mail"></use>
+              </svg>info@devstudio.com</a>
+          </li>
+          <li class="contacts-head__item">
+            <a class="contacts-head__link link" href="tel:+380961111111"><svg class="contacts-head__icon" width="10"
+                height="16">
+                <use href="./images/icons.svg#smart"></use>
+              </svg>+38 096 111 11 11</a>
+          </li>
+        </ul>
+
+        <!-- ========   MENU_BUTTON   === -->
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./images/icons.svg#px-menu"></use>
+          </svg>
+
+        </button>
+
+
+
       </nav>
 
-      <!-- !===================== КОНТАКТЫ ВТОРОЙ СПИСОК В ШАПКЕ =========================  -->
-      <ul class="contacts-head list">
-        <li class="contacts-head__item">
-          <a class="contacts-head__link link" href="mailto:info@devstudio.com" rel=""><svg class="contacts-head__icon"
-              width="16" height="12">
-              <use href="./images/icons.svg#mail"></use>
-            </svg>info@devstudio.com</a>
-        </li>
-        <li class="contacts-head__item">
-          <a class="contacts-head__link link" href="tel:+380961111111"><svg class="contacts-head__icon" width="10"
-              height="16">
-              <use href="./images/icons.svg#smart"></use>
-            </svg>+38 096 111 11 11</a>
-        </li>
-      </ul>
 
     </div>
+    <!-- mobile-menu -->
+    <div class="menu-container mobile-menu js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon-cross" href="./images/icons.svg#px-cross"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-nav list">
+        <li class="mobile-nav__item"><a href="./index.html"
+            class="mobile-nav__link mobile-nav__link--current link">Cтудия</a></li>
+        <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link link">Портфолио</a></li>
+        <li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Контакты</a></li>
+      </ul>
+
+      <div class="mobile-assist-box">
+
+        <ul class="mobile-contacts list">
+
+
+          <li class="mobile-contacts__item">
+            <a class="mobile-contacts__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a class="mobile-contacts__mail link" href="mailto:info@devstudio.com" rel="">info@devstudio.com</a>
+          </li>
+        </ul>
+        <!--  -->
+        <ul class="mobile-webpages list">
+          <li class="mobile-webpages__item">
+            <a class="mobile-webpages__link link" href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </li>
+          <li class="mobile-webpages__item">
+            <a class="mobile-webpages__link link" href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+          </li>
+          <li class="mobile-webpages__item">
+            <a class="mobile-webpages__link link" href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </li>
+          <li class="mobile-webpages__item">
+            <a class="mobile-webpages__link link" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </li>
+        </ul>
+        <!--  -->
+
+      </div>
+    </div>
+    <!--  -->
+
   </header>
 
-  <!-- ! ........ MAIN СТРАНИЦЫ ........ -->
-
+  <!-- ====  main  ==== -->
   <main>
 
-    <!-- !  ____ СЕКЦИЯ HERO _____ -->
+    <!-- ==== ==hero -->
 
     <section class="hero">
       <div class="container hero__container">
@@ -153,14 +216,13 @@
 
           <li class="team-list__item">
             <article class="member">
-              <img src="./images/t-card1.jpg" width="" alt="фото Игорь Демьяненко">
+              <img src="./images/t-card1.jpg" width="810" alt="фото Игорь Демьяненко">
               <div class="member__data">
                 <div class="member__descript">
                   <h3 class="member__title title">Игорь Демьяненко</h3>
                   <p lang="en" class="member__txt">Product Designer</p>
                 </div>
 
-                <!-- ====== БЛОК ССЫЛОК НА СОЦСЕТИ ============================ -->
                 <ul class="webpages list">
                   <li class="webpages__item ">
                     <a href="" class="webpages__link link">
@@ -196,14 +258,13 @@
           </li>
 
           <li class="team-list__item">
-            <article class="member"><img src="./images/t-card2.jpg" width="" alt="фото Ольга Репина">
+            <article class="member"><img src="./images/t-card2.jpg" width="810" alt="фото Ольга Репина">
               <div class="member__data">
                 <div class="member__descript">
                   <h3 class="member__title title">Ольга Репина</h3>
                   <p lang="en" class="member__txt">Frontend Developer</p>
                 </div>
 
-                <!-- ? БЛОК ССЫЛОК НА СОЦСЕТИ -->
                 <ul class="webpages list">
                   <li class="webpages__item">
                     <a href="" class="webpages__link link">
@@ -239,14 +300,13 @@
           </li>
 
           <li class="team-list__item">
-            <article class="member"><img src="./images/t-card3.jpg" width="" alt="фото Николай Тарасов">
+            <article class="member"><img src="./images/t-card3.jpg" width="810" alt="фото Николай Тарасов">
               <div class="member__data">
                 <div class="member__descript">
                   <h3 class="member__title title">Николай Тарасов</h3>
                   <p lang="en" class="member__txt">Marketing</p>
                 </div>
 
-                <!-- ? БЛОК ССЫЛОК НА СОЦСЕТИ -->
                 <ul class="webpages list">
                   <li class="webpages__item">
                     <a href="" class="webpages__link link">
@@ -283,14 +343,13 @@
           </li>
 
           <li class="team-list__item">
-            <article class="member"><img src="./images/t-card4.jpg" width="" alt="фото Михаил Ермаков">
+            <article class="member"><img src="./images/t-card4.jpg" width="810" alt="фото Михаил Ермаков">
               <div class="member__data">
                 <div class="member__descript">
                   <h3 class="member__title title">Михаил Ермаков</h3>
                   <p lang="en" class="member__txt">UI Designer</p>
                 </div>
 
-                <!-- ? БЛОК ССЫЛОК НА СОЦСЕТИ -->
                 <ul class="webpages list">
                   <li class="webpages__item">
                     <a href="" class="webpages__link link">
@@ -329,8 +388,6 @@
       </div>
     </section>
 
-
-    <!--  ПРОДОЛЖЕНИЕ ТУТ -->
 
     <!-- ! ___ СЕКЦИЯ КЛИЕНТЫ ___ -->
 
@@ -521,10 +578,21 @@
     </div>
 
   </div>
-  <!-- === ПОДКЛЮЧЕНИЕ СКРИПТА === -->
+  <!-- === ПОДКЛЮЧЕНИЕ СКРИПТТОВ === -->
 
+  <!-- modal -->
   <script src="./js/modal.js"></script>
-  <!-- <script src="./js/form.js"></script> -->
+  <!--  -->
+
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+
+  <script defer src="js/mobile-menu.js"></script>
+
+
+
 
 </body>
 

@@ -1,9 +1,6 @@
-.header * {
-  outline: 1px solid teal;
-}
-.header {
-  border-bottom: 2px solid red;
-}
+// .header * {
+//   outline: 1px solid teal;
+// }
 
 .logo {
   display: block;
@@ -11,7 +8,7 @@
   font-family: Raleway;
   font-weight: 700;
   font-size: 24px;
-  line-height: calc(28 / 24);
+  line-height: (28 / 24);
   letter-spacing: 0.03em;
 
   color: var(--text-accent-color);
@@ -26,10 +23,4 @@
     font-size: 26px;
     line-height: calc(31 / 26);
   }
-}
-.header__logo {
-  display: inline-block;
-}
-.site-nav {
-  display: inline-flex;
 }
