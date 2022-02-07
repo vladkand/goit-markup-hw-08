@@ -1,0 +1,17 @@
+// !  ----- asist-box
+.mobile-menu__container {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  height: 100%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.mobile-menu__menu-toggle {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
