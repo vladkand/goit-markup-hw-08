@@ -126,9 +126,9 @@
 }
 
 .mobile-webpages__item:not(:last-child)::after {
+  content: '';
   display: flex;
   align-items: center;
-  content: '';
 
   width: 10px;
   height: 22px;
