@@ -222,29 +222,16 @@ body .link {
 .backdrop {
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 3;
-  width: 100%;
-  height: 100%;
-  padding: 93px 15px;
-  opacity: 1;
+  height: 100vh;
+  width: 100vw;
+  z-index: 5;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: scroll;
 }
-@media screen and (min-width: 768px) {
-  .backdrop {
-    padding: 207px 159px;
-  }
-}
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-}
-@media screen and (min-width: 768px) {
-  .backdrop {
-    padding: 207px 159px;
-  }
 }
 
 .backdrop.is-hidden .modal {
@@ -252,21 +239,26 @@ body .link {
 }
 
 .modal {
-  margin: 0 auto;
-  padding: 40px;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 450px;
+  width: calc(100% - 30px);
+  padding: 40px;
+  min-height: 581px;
+  border-radius: 4px;
   background-color: var(--bg-prime-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%) scale(1) rotate(0deg);
 }
 @media screen and (min-width: 1200px) {
   .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1) rotate(0deg);
     max-width: 528px;
   }
 }
@@ -301,15 +293,20 @@ body .link {
 .modal__title {
   display: block;
   margin-bottom: 12px;
-  font-size: 20px;
   font-weight: 700;
-  line-height: calc(30 / 20);
+  font-size: 20px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--black-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
+}
 .form {
   display: flex;
   flex-direction: column;

@@ -5,7 +5,7 @@
 .examples-list {
   margin: -15px;
 
-  @include tab {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
   }
@@ -14,7 +14,7 @@
 .examples-list__item {
   margin: 15px;
 
-  @include tab {
+  @include tablet {
     display: flex;
     flex-basis: calc((100% - 4 * 15px) / 2);
   }
