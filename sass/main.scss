@@ -5,15 +5,17 @@
 
 @import './components/section-container.scss';
 @import './components/fonts';
-@import './components/big-button';
+@import './components/fonts';
+@import './components/logo';
 
+@import './components/big-button';
+@import './components/menu-toggle';
 @import './components/modal';
 @import './components/webpages';
 
-@import './header/logo';
-@import './header/header';
+@import './header/start-header';
 @import './header/mob-menu';
-@import './header/mob-container';
+// @import './header/mob-container';
 
 @import './header/nav-head';
 @import './header/contacts-head';
