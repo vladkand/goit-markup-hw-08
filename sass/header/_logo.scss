@@ -11,6 +11,12 @@
   line-height: (28 / 24);
   letter-spacing: 0.03em;
 
+  transition: outline-color $function;
+
+  &:focus {
+    outline-color: var(--text-accent-color);
+  }
+
   color: var(--text-accent-color);
   & .logo__part--dark {
     color: var(--black-color);

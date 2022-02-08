@@ -12,15 +12,24 @@
   cursor: pointer;
   border: none;
 
+  transition: outline-color $function, fill $function;
+
+  &:hover,
+  &:focus {
+    fill: var(--text-accent-color);
+    outline-color: var(--text-accent-color);
+  }
+
   @include tablet {
     display: none;
   }
 }
-// !--------   general-Box
+
 .mobile-menu {
   background-color: palegoldenrod;
 
   display: flex;
+  z-index: 3;
   flex-direction: column;
   position: fixed;
   top: 0;
@@ -69,6 +78,9 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--text-second-color);
+}
+.mobile-nav__link--current {
+  color: var(--text-accent-color);
 }
 
 .mobile-assist-box {
