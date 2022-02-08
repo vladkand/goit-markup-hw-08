@@ -9,7 +9,7 @@
   letter-spacing: 0.03em;
   color: var(--text-second-color);
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 50px;
 
     font-size: 36px;

@@ -21,7 +21,7 @@
   & .logo__part--light {
     color: var(--bg-prime-color);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 26px;
     line-height: (31 / 26);
   }

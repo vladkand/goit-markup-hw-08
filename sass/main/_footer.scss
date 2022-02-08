@@ -11,7 +11,8 @@
 .footer__container {
   display: block;
   text-align: center;
-  @media screen and (min-width: 1200px) {
+
+  @include desktop {
     display: flex;
     align-items: baseline;
   }
@@ -27,13 +28,15 @@
 // ---part
 
 .footer__contacts {
-  @media screen and (max-width: 1199px) {
+  @include max-tablet {
     margin-bottom: 60px;
   }
-  @media screen and (min-width: 768px) {
+
+  @include tablet {
     display: inline-block;
     margin-right: 165px;
   }
+
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
