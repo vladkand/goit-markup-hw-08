@@ -104,7 +104,8 @@
     display: inline-block;
     vertical-align: top;
   }
-  @media screen and (min-width: 1200px) {
+  // @media screen and (min-width: 1200px)
+  @include desktop {
     display: inline-flex;
     flex-direction: column;
     margin-right: 93px;

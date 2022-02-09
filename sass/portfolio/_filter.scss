@@ -8,7 +8,8 @@
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  // @media screen and (min-width: 1200px)
+  @include desktop {
     // justify-content: center;
     margin-bottom: 50px;
   }
@@ -34,7 +35,6 @@
   letter-spacing: 0.03em;
   color: var(--text-second-color);
   background-color: var(--bg-second-color);
-  background-color: wheat;
 
   cursor: pointer;
   transition: color $function, box-shadow $function, background-color $function;

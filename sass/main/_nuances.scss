@@ -16,12 +16,14 @@
 }
 
 .nuances-list__item {
-  @media screen and (min-width: 768px) {
+  // @media screen and (min-width: 768px)
+  @include tablet {
     margin: 15px;
     flex-basis: calc((100% - 4 * 15px) / 2);
   }
 
-  @media screen and (min-width: 1200px) {
+  // @media screen and (min-width: 1200px)
+  @include desktop {
     flex-basis: calc((100% - 8 * 15px) / 4);
   }
   &:not(:last-child) {
