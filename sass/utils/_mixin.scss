@@ -5,29 +5,35 @@
   letter-spacing: $ls;
 }
 
+// @include tel
 @mixin tel {
-  @media screen and (mіn-width: 480px) {
+  @media screen and (min-width: 480px) {
     @content;
   }
 }
 
+// @include tablet
 @mixin tablet {
   @media screen and (min-width: 768px) {
     @content;
   }
 }
 
+// @include desktop
 @mixin desktop {
   @media screen and (min-width: 1200px) {
     @content;
   }
 }
+
+// @include max-tel
 @mixin max-tel {
   @media screen and (max-width: 767px) {
     @content;
   }
 }
 
+// @include max-tablet
 @mixin max-tablet {
   @media screen and (max-width: 1199px) {
     @content;

@@ -3,7 +3,8 @@
 }
 
 .team-list {
-  @media screen and (min-width: 768px) {
+  // @media screen and (min-width: 768px)
+  @include tablet {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -19,12 +20,14 @@
   background-color: var(--bg-prime-color);
 
   &:not(:last-child) {
-    @media screen and (max-width: 767px) {
+    // @media screen and (max-width: 767px)
+    @include max-tel {
       margin-bottom: 30px;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  // @media screen and (min-width: 768px)
+  @include tablet {
     display: flex;
     margin: 15px;
     flex-basis: calc((100% - 4 * 15px) / 2);

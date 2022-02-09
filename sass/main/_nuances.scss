@@ -6,7 +6,8 @@
 }
 
 .nuances-list {
-  @media screen and (min-width: 768px) {
+  // @media screen and (min-width: 768px)
+  @include tablet {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -19,11 +20,13 @@
     margin: 15px;
     flex-basis: calc((100% - 4 * 15px) / 2);
   }
+
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 8 * 15px) / 4);
   }
   &:not(:last-child) {
-    @media screen and (max-width: 767px) {
+    // @media screen and (max-width: 767px)
+    @include max-tel {
       margin-bottom: 30px;
     }
   }
@@ -45,7 +48,8 @@
 .nuances-list__title {
   margin-bottom: 10px;
 
-  @media screen and (max-width: 767px) {
+  // @media screen and (max-width: 767px)
+  @include max-tel {
     text-align: center;
   }
   font-weight: 700;
