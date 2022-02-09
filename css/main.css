@@ -799,9 +799,9 @@ body .link {
           align-items: center;
   width: 10px;
   height: 22px;
+  margin-right: 10px;
   background-color: transparent;
   border-right: 2px solid rgba(33, 33, 33, 0.2);
-  margin-right: 10px;
 }
 
 .mobile-webpages__link {
