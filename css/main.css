@@ -1034,16 +1034,12 @@ body .link {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 1199px) {
+.production {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
   .production {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: none;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    display: block;
   }
 }
 
