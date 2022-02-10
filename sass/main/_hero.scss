@@ -3,8 +3,8 @@
   padding-bottom: 118px;
   //
   margin: 0 auto;
-  max-width: 480px;
-  width: 100%;
+  // max-width: 480px;
+  // width: 100%;
   //
   text-align: center;
   background-color: var(--hero-bgcolor);
@@ -20,7 +20,7 @@
   }
   @media (min-width: 768px) {
     //
-    max-width: 768px;
+    // max-width: 768px;
     //
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/hero-2tab.jpg);
@@ -32,7 +32,7 @@
   }
   @media (min-width: 1200px) {
     max-width: 1600px;
-    height: 600px;
+    // height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/hero-1ps.jpg);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
