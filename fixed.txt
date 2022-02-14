@@ -1,0 +1,2 @@
+1/ button filter-deleted "value"
+2/ pointer for check accord
