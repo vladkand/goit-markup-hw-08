@@ -33,7 +33,7 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -1532,10 +1532,6 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
-}
-
-.sample {
-  width: 100%;
 }
 
 .sample__link {
