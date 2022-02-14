@@ -1228,20 +1228,15 @@ body {
     margin-bottom: 60px;
   }
 }
-
 @media screen and (min-width: 1200px) {
-  .footer__item:first-child {
+  .footer__item:not(:last-child) {
     margin-right: 70px;
   }
-
   .footer__item:last-child {
     margin-left: auto;
   }
-
-  .footer__item {
-    text-align: start;
-  }
 }
+
 @media screen and (min-width: 768px) {
   .footer__wrapper {
     display: -webkit-box;
@@ -1261,6 +1256,7 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    margin-right: 70px;
   }
 }
 
